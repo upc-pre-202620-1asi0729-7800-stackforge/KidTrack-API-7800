@@ -1,0 +1,675 @@
+{
+  "organizations": [
+    {
+      "id": "a0000000-0000-0000-0000-000000000001",
+      "name": "Transportes Escolares Lima Norte S.A.C.",
+      "status": "ACTIVE",
+      "createdAt": "2026-06-01T08:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "b0000000-0000-0000-0000-000000000001",
+      "firstName": "Nickolas",
+      "lastName": "Quispe",
+      "email": "admin@kidtrack.pe",
+      "password": "admin123",
+      "roleTier": "ADMIN",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000002",
+      "firstName": "Carlos",
+      "lastName": "Ramirez",
+      "email": "driver@kidtrack.pe",
+      "password": "driver123",
+      "roleTier": "DRIVER",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000003",
+      "firstName": "Rosita",
+      "lastName": "Nery",
+      "email": "parent@kidtrack.pe",
+      "password": "parent123",
+      "roleTier": "PARENT",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000004",
+      "firstName": "Luis",
+      "lastName": "Torres",
+      "email": "ltorres@kidtrack.pe",
+      "password": "driver456",
+      "roleTier": "DRIVER",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000005",
+      "firstName": "Carmen",
+      "lastName": "Huanca",
+      "email": "chuanca@kidtrack.pe",
+      "password": "parent456",
+      "roleTier": "PARENT",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "name": "Ruta Norte — Comas / Los Olivos",
+      "type": "OUTBOUND",
+      "driverId": "b0000000-0000-0000-0000-000000000002",
+      "driverName": "Carlos Ramirez",
+      "vehicleId": 1,
+      "vehiclePlate": "ABC-123",
+      "studentIds": [
+        "c-1",
+        "c-2",
+        "c-5"
+      ],
+      "scheduledStartTime": "06:00",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "waypoints": [
+        {
+          "order": 1,
+          "name": "Av. Universitaria cdra. 54",
+          "lat": -11.9553,
+          "lng": -77.0602
+        },
+        {
+          "order": 2,
+          "name": "Av. Angélica Gamarra cdra. 8",
+          "lat": -11.9612,
+          "lng": -77.0648
+        },
+        {
+          "order": 3,
+          "name": "Jr. Las Orquídeas 342",
+          "lat": -11.968,
+          "lng": -77.0701
+        },
+        {
+          "order": 4,
+          "name": "I.E. San Marcos (llegada)",
+          "lat": -11.972,
+          "lng": -77.0742
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ruta Sur — Surco / Chorrillos",
+      "type": "OUTBOUND",
+      "driverId": "b0000000-0000-0000-0000-000000000004",
+      "driverName": "Luis Torres",
+      "vehicleId": 2,
+      "vehiclePlate": "XYZ-456",
+      "studentIds": [
+        "c-3",
+        "c-4"
+      ],
+      "scheduledStartTime": "06:30",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "waypoints": [
+        {
+          "order": 1,
+          "name": "Av. Caminos del Inca cdra. 12",
+          "lat": -12.1275,
+          "lng": -76.9963
+        },
+        {
+          "order": 2,
+          "name": "Av. El Derby cdra. 3",
+          "lat": -12.119,
+          "lng": -76.9911
+        },
+        {
+          "order": 3,
+          "name": "Jr. Las Magnolias 156",
+          "lat": -12.11,
+          "lng": -76.985
+        },
+        {
+          "order": 4,
+          "name": "I.E. San Marcos (llegada)",
+          "lat": -11.972,
+          "lng": -77.0742
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ruta Este — San Juan de Lurigancho",
+      "type": "RETURN",
+      "driverId": "b0000000-0000-0000-0000-000000000002",
+      "driverName": "Carlos Ramirez",
+      "vehicleId": 1,
+      "vehiclePlate": "ABC-123",
+      "studentIds": [
+        "c-1",
+        "c-2",
+        "c-5"
+      ],
+      "scheduledStartTime": "12:30",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "waypoints": [
+        {
+          "order": 1,
+          "name": "I.E. San Marcos (salida)",
+          "lat": -11.972,
+          "lng": -77.0742
+        },
+        {
+          "order": 2,
+          "name": "Av. Gran Chimú cdra. 4",
+          "lat": -12.0012,
+          "lng": -77.005
+        },
+        {
+          "order": 3,
+          "name": "Jr. Los Jazmines 890",
+          "lat": -12.0104,
+          "lng": -77.0012
+        },
+        {
+          "order": 4,
+          "name": "Urb. Zárate (final)",
+          "lat": -12.02,
+          "lng": -76.998
+        }
+      ]
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "routeId": 1,
+      "routeName": "Ruta Norte — Comas / Los Olivos",
+      "driverId": "b0000000-0000-0000-0000-000000000002",
+      "driverName": "Carlos Ramirez",
+      "vehicleId": 1,
+      "vehiclePlate": "ABC-123",
+      "studentIds": [
+        "c-1",
+        "c-2",
+        "c-5"
+      ],
+      "tripType": "OUTBOUND",
+      "scheduledDate": "2026-05-09",
+      "scheduledStartTime": "06:00",
+      "status": "EN_ROUTE",
+      "startTime": "2026-05-09T06:05:00Z",
+      "endTime": null,
+      "studentsTotal": 3,
+      "studentsBoarded": 0,
+      "currentStop": "Jr. Las Orquídeas 342",
+      "currentLocation": "Jr. Las Orquídeas 342",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 2,
+      "routeId": 2,
+      "routeName": "Ruta Sur — Surco / Chorrillos",
+      "driverId": "b0000000-0000-0000-0000-000000000004",
+      "driverName": "Luis Torres",
+      "vehicleId": 2,
+      "vehiclePlate": "XYZ-456",
+      "studentIds": [
+        "c-3",
+        "c-4"
+      ],
+      "tripType": "OUTBOUND",
+      "scheduledDate": "2026-05-09",
+      "scheduledStartTime": "06:30",
+      "status": "EN_ROUTE",
+      "startTime": "2026-10-04T07:08:14.893Z",
+      "endTime": null,
+      "studentsTotal": 2,
+      "studentsBoarded": 0,
+      "currentStop": "Av. Caminos del Inca cdra. 12",
+      "currentLocation": null,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 3,
+      "routeId": 3,
+      "routeName": "Ruta Este — San Juan de Lurigancho",
+      "driverId": "b0000000-0000-0000-0000-000000000002",
+      "driverName": "Carlos Ramirez",
+      "vehicleId": 1,
+      "vehiclePlate": "ABC-123",
+      "studentIds": [
+        "c-1",
+        "c-2",
+        "c-5"
+      ],
+      "tripType": "RETURN",
+      "scheduledDate": "2026-05-08",
+      "scheduledStartTime": "12:30",
+      "status": "COMPLETED",
+      "startTime": "2026-05-08T12:32:00Z",
+      "endTime": "2026-05-08T14:20:00Z",
+      "studentsTotal": 3,
+      "studentsBoarded": 3,
+      "currentStop": null,
+      "currentLocation": "Urb. Zárate",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": "b0000000-0000-0000-0000-000000000002",
+      "firstName": "Carlos",
+      "lastName": "Ramirez",
+      "phone": "987-654-321",
+      "role": "driver",
+      "license": "Q-123456",
+      "vehicleId": 1,
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 2,
+      "userId": "b0000000-0000-0000-0000-000000000004",
+      "firstName": "Luis",
+      "lastName": "Torres",
+      "phone": "987-111-222",
+      "role": "driver",
+      "license": "P-789012",
+      "vehicleId": 2,
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 3,
+      "userId": null,
+      "firstName": "Pedro",
+      "lastName": "Mendoza",
+      "phone": "987-333-444",
+      "role": "driver",
+      "license": "R-345678",
+      "vehicleId": null,
+      "status": "INACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 4,
+      "userId": "b0000000-0000-0000-0000-000000000003",
+      "firstName": "Rosita",
+      "lastName": "Nery",
+      "phone": "999-888-777",
+      "role": "parent",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 5,
+      "userId": "b0000000-0000-0000-0000-000000000005",
+      "firstName": "Carmen",
+      "lastName": "Huanca",
+      "phone": "999-555-666",
+      "role": "parent",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 6,
+      "userId": null,
+      "firstName": "Juan Carlos",
+      "lastName": "Quispe",
+      "phone": "999-111-222",
+      "role": "parent",
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "plate": "ABC-123",
+      "model": "Mercedes Sprinter",
+      "capacity": 20,
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 2,
+      "plate": "XYZ-456",
+      "model": "Toyota Coaster",
+      "capacity": 25,
+      "status": "ACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": 3,
+      "plate": "DEF-789",
+      "model": "Hyundai County",
+      "capacity": 30,
+      "status": "INACTIVE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "parents": [
+    {
+      "id": "p-1",
+      "name": "Rosita Nery",
+      "email": "parent@kidtrack.pe",
+      "phone": "999-888-777",
+      "status": true,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "p-2",
+      "name": "Carmen Huanca",
+      "email": "chuanca@kidtrack.pe",
+      "phone": "999-555-666",
+      "status": true,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "p-3",
+      "name": "Juan Carlos Quispe",
+      "email": "jquispe@email.com",
+      "phone": "999-111-222",
+      "status": true,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "p-4",
+      "name": "María Flores",
+      "email": "mflores@email.com",
+      "phone": "988-222-333",
+      "status": false,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "children": [
+    {
+      "id": "c-1",
+      "name": "Lucía Nery",
+      "grade": "3ro B",
+      "parentId": "p-1",
+      "status": true,
+      "boardingStatus": "AUSENTE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "c-2",
+      "name": "Diego Nery",
+      "grade": "1ro A",
+      "parentId": "p-1",
+      "status": true,
+      "boardingStatus": "AUSENTE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "c-3",
+      "name": "Sofía Huanca",
+      "grade": "5to A",
+      "parentId": "p-2",
+      "status": true,
+      "boardingStatus": "ABORDADO",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "c-4",
+      "name": "Andrés Huanca",
+      "grade": "2do C",
+      "parentId": "p-2",
+      "status": true,
+      "boardingStatus": "AUSENTE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "c-5",
+      "name": "Mateo Quispe",
+      "grade": "4to B",
+      "parentId": "p-3",
+      "status": true,
+      "boardingStatus": "ABORDADO",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "c-6",
+      "name": "Valentina Flores",
+      "grade": "6to A",
+      "parentId": "p-4",
+      "status": false,
+      "boardingStatus": "AUSENTE",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-basic",
+      "planTier": "BASIC",
+      "name": "Básico",
+      "maxRoutes": 2,
+      "maxDrivers": 2,
+      "maxStudents": 30,
+      "price": 9.99,
+      "description": "Ideal para grupos pequeños de padres organizados"
+    },
+    {
+      "id": "plan-intermediate",
+      "planTier": "INTERMEDIATE",
+      "name": "Intermedio",
+      "maxRoutes": 6,
+      "maxDrivers": 6,
+      "maxStudents": 100,
+      "price": 24.99,
+      "description": "Para flotas medianas que buscan mayor visibilidad"
+    },
+    {
+      "id": "plan-complete",
+      "planTier": "COMPLETE",
+      "name": "Completo",
+      "maxRoutes": 20,
+      "maxDrivers": 20,
+      "maxStudents": 500,
+      "price": 49.99,
+      "description": "Solución total para empresas de transporte escolar"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub-1",
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "planId": "plan-intermediate",
+      "state": "ACTIVE",
+      "startDate": "2026-10-01T00:00:00Z",
+      "endDate": "2026-12-01T00:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1",
+      "type": "ABORDAJE",
+      "message": "Lucía Nery abordó la unidad en Av. Universitaria cdra. 54",
+      "timestamp": "2026-05-09T06:12:00Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "n-2",
+      "type": "PROXIMIDAD",
+      "message": "El bus está a 500 metros de tu parada. ¡Sal ahora!",
+      "timestamp": "2026-05-09T06:08:00Z",
+      "read": true,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "n-3",
+      "type": "AUSENCIA",
+      "message": "Andrés Huanca fue marcado como AUSENTE en la parada Av. Angélica Gamarra",
+      "timestamp": "2026-05-09T06:20:00Z",
+      "read": false,
+      "parentId": "p-2",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "n-4",
+      "type": "LLEGADA",
+      "message": "La Ruta Este ha llegado a destino. Todos los alumnos fueron entregados correctamente.",
+      "timestamp": "2026-05-08T14:22:00Z",
+      "read": true,
+      "parentId": "p-3",
+      "tripId": 3,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "n-5",
+      "type": "RETRASO",
+      "message": "Retraso de 20 min en Ruta Norte por tráfico en Av. Universitaria. Nuevo ETA: 08:20 AM.",
+      "timestamp": "2026-05-09T07:45:00Z",
+      "read": true,
+      "parentId": null,
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Lucía Nery abordó la unidad en Av. Angélica Gamarra cdra. 8",
+      "timestamp": "2026-10-04T07:13:55.852Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098035867"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Diego Nery abordó la unidad en Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:15:27.874Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098127885"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Lucía Nery abordó la unidad en Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:15:57.151Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098157159"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Diego Nery abordó la unidad en Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:15:57.491Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098157498"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Lucía Nery abordó la unidad en Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:15:59.577Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098159581"
+    },
+    {
+      "type": "ABORDAJE",
+      "message": "Diego Nery abordó la unidad en Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:15:59.875Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098159880"
+    },
+    {
+      "type": "AUSENCIA",
+      "message": "Lucía Nery fue marcado como AUSENTE en la parada Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:16:00.408Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098160413"
+    },
+    {
+      "type": "AUSENCIA",
+      "message": "Diego Nery fue marcado como AUSENTE en la parada Jr. Las Orquídeas 342",
+      "timestamp": "2026-10-04T07:16:00.773Z",
+      "read": false,
+      "parentId": "p-1",
+      "tripId": 1,
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "n-1791098160779"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "i-1",
+      "tripId": 1,
+      "routeId": 1,
+      "routeName": "Ruta Norte — Comas / Los Olivos",
+      "type": "RETRASO",
+      "severity": "LOW",
+      "description": "Tráfico intenso en Av. Universitaria. Retraso estimado de 15 minutos.",
+      "reportedBy": "b0000000-0000-0000-0000-000000000002",
+      "timestamp": "2026-05-09T06:35:00Z",
+      "status": "OPEN",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "i-2",
+      "tripId": 1,
+      "routeId": 1,
+      "routeName": "Ruta Norte — Comas / Los Olivos",
+      "type": "COMPORTAMIENTO",
+      "severity": "LOW",
+      "description": "Alumno Diego Nery se quitó el cinturón durante el trayecto.",
+      "reportedBy": "b0000000-0000-0000-0000-000000000002",
+      "timestamp": "2026-05-09T06:50:00Z",
+      "status": "RESOLVED",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "i-3",
+      "tripId": 3,
+      "routeId": 3,
+      "routeName": "Ruta Este — San Juan de Lurigancho",
+      "type": "AVERIA",
+      "severity": "MEDIUM",
+      "description": "Falla leve en el sistema de frenos. Revisión mecánica programada.",
+      "reportedBy": "b0000000-0000-0000-0000-000000000002",
+      "timestamp": "2026-05-08T13:10:00Z",
+      "status": "RESOLVED",
+      "organizationId": "a0000000-0000-0000-0000-000000000001"
+    },
+    {
+      "tripId": 1,
+      "routeId": 1,
+      "routeName": "Ruta Norte — Comas / Los Olivos",
+      "type": "AVERIA",
+      "severity": "HIGH",
+      "description": "pini",
+      "reportedBy": "b0000000-0000-0000-0000-000000000004",
+      "timestamp": "2026-10-04T07:07:41.842Z",
+      "status": "OPEN",
+      "organizationId": "a0000000-0000-0000-0000-000000000001",
+      "id": "i-1791097661853"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "KidTrack-API",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "reset-db": "node -e \"require('fs').copyFileSync('db.seed.json','db.json')\""
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "json-server": "0.17.4"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
